@@ -1,0 +1,31 @@
+{
+  "azure_config": {
+    "storage_account": "swethadataproject",
+    "subscription_id": "Azure subscription 1",
+    "resource_group": "rg-dataengineering",
+    "deployment_name": "swethadataproject_1759430576096",
+    "databricks_workspace_url": "https://adb-<workspace-id>.azuredatabricks.net",
+    "synapse_workspace_name": "swethadataproject-synapse",
+    "key_vault_name": "swethadataproject-keyvault"
+  },
+  "containers": {
+    "bronze": "bronze",
+    "silver": "silver", 
+    "gold": "gold"
+  },
+  "database_config": {
+    "source_database": "AdventureWorksLT2017",
+    "target_database": "gold_db",
+    "schema": "SalesLT"
+  },
+  "pipeline_config": {
+    "integration_runtime_name": "SelfHostedIR",
+    "linked_service_name": "LS_SQLServer",
+    "pipeline_name": "End-to-End-Data-Pipeline"
+  },
+  "author": {
+    "name": "Srinivas Swetha",
+    "email": "srinivasswetha85@gmail.com",
+    "github": "srinivasswetha85"
+  }
+}

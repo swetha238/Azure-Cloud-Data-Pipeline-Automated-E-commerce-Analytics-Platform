@@ -1,0 +1,25 @@
+{
+  "azure_config": {
+    "storage_account": "<your-storage-account>",
+    "subscription_id": "<your-subscription-id>",
+    "resource_group": "<your-resource-group>",
+    "databricks_workspace_url": "<your-databricks-workspace-url>",
+    "synapse_workspace_name": "<your-synapse-workspace-name>",
+    "key_vault_name": "<your-key-vault-name>"
+  },
+  "containers": {
+    "bronze": "bronze",
+    "silver": "silver", 
+    "gold": "gold"
+  },
+  "database_config": {
+    "source_database": "AdventureWorksLT2017",
+    "target_database": "gold_db",
+    "schema": "SalesLT"
+  },
+  "pipeline_config": {
+    "integration_runtime_name": "<your-integration-runtime-name>",
+    "linked_service_name": "<your-linked-service-name>",
+    "pipeline_name": "End-to-End-Data-Pipeline"
+  }
+}
